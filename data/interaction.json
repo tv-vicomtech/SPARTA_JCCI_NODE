@@ -1,0 +1,13 @@
+{
+	"organization": "Vicomtech.org",
+	"updated_date": "01/07/2020",
+	"data":[{
+		"name": "ShellInABox",
+		"url": "https://10.200.20.50:4200/",
+		"version": "1.0",
+		"contact": "rorduna@vicomtech.org",
+		"info": "authentication is required",
+		"description": "Shellinabox is an ajax-based web terminal emulator for any browser that supports Javascript and CSS without the need for any additional plugin. In this case, the terminal led you in the Vicomtech internal laboratory, on a controlled landing host."
+		}
+	]
+}

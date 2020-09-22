@@ -1,0 +1,21 @@
+{
+	"organization": "Vicomtech",
+	"updated_date": "01/07/2020",
+	"data":[{
+		"name" : "Adversarial attack",
+		"url" : "https://gitlab.vicomtech.es/SPARTA_EU3270_2018/safair/tree/master/Adversarial_attack",
+		"version": 1.0,
+		"contact": "xetxeberria@vicomtech.org",
+		"info": "code",
+		"description": "Different implementation of adversarial attack y defense developed in SPARTA Safair"
+		},
+		{
+		"name" : "Bio-Inspired models",
+		"url" : "https://gitlab.vicomtech.es/SPARTA_EU3270_2018/safair/tree/master/Bio-Inspired%20models",
+		"version": 1.0,
+		"contact": "xetxeberria@vicomtech.org",
+		"info": "code",
+		"description": "Implementation of different models based on bio-tecnology"
+		}
+	]
+}

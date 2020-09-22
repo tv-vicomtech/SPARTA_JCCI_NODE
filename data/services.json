@@ -1,0 +1,13 @@
+{
+	"organization": "Vicomtech",
+	"updated_date": "01/07/2020",
+	"data":[{
+		"name": "service1",
+		"url": "no url",
+		"version": 1.0,
+		"contact": "rourduna@vicomtech.org",
+		"info": "service1",
+		"description": "service1"
+		}
+	]
+}
