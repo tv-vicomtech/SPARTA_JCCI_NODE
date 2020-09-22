@@ -10,13 +10,15 @@ All the partners information are stored in the folder 'data'.
 
 2) Download this repository
 
-```git clone https://gitlab.vicomtech.es/SPARTA_EU3270_2018/jcci_sparta_api.git```
+```git clone https://github.com/tv-vicomtech/SPARTA_JCCI_NEXUS_REST_API.git```
 
 ## CHANGE DATA WITH YOUR INFORMATION
 
 3) Go inside the folder data and update the files with your information
 
-```cd jcci_sparta_api/data```
+```cd SPARTA_JCCI_NEXUS_REST_API/data```
+
+4) NB. There are five file to be modified, each one follow a json structure. If your company not provide a data/interacion/tool/service, please remove the default information from the appropiate file and keep an empty structure in there.
 
 ```* description.jon = this file is a .json file that contains a general description of the activities and main goals of the partner```
 
@@ -29,7 +31,7 @@ All the partners information are stored in the folder 'data'.
 ```* tools.jon = this file is a .json file that contains information about the available tools created by the partner, how is possible access to them, their versions, the contact detail, and a little description.```
 
 ## DEPLOY THE CONTAINER
-4) Go in the main folder (jcci_sparta_api) and build docker container
+4) Go in the main folder (SPARTA_JCCI_NEXUS_REST_API) and build docker container
 
 ```cd ..```
 
@@ -40,6 +42,4 @@ All the partners information are stored in the folder 'data'.
  ```docker run -d -p 5004:5004 --name jcci_sparta_api jcci_sparta_api ```
  
  ## ENABLE A PUBLIC ACCESS
- 6) Communicate to the Nexus responsabable (or the Task Leader) the information about the public IP:PORT where the rest-API can be consumed.
-
-6) Please provide to the JCCI Nexus manager the public IP where you have publish the API service
+ 6) Please provide to the JCCI Nexus manager (or the Task Leader) the information about the public IP:PORT where the rest-API can be consumed.
