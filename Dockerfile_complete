@@ -1,0 +1,25 @@
+# Use the official image as a parent image.
+FROM fiware/pep-proxy:7.8.1
+
+RUN apt-get update
+RUN apt install -y software-properties-common
+RUN apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+
+RUN curl -O https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
+RUN tar -xf Python-3.7.3.tar.xz
+RUN cd Python-3.7.3 && ./configure --enable-optimizations && make -j 4 && make altinstall
+
+
+# Set the working directory.
+WORKDIR /opt/fiware-pep-proxy
+
+# Run the command inside your image filesystem.
+RUN sed -i "s|cert/cert.crt|cert/cert.pem|g" /opt/fiware-pep-proxy/config.js
+RUN sed -i "s|cert/key.key|cert/privakey.pem|g" /opt/fiware-pep-proxy/config.js
+RUN sed -i -e "/privakey.pem/a\\  ca_cert: \['cert/chain.pem', 'cert/fullchain.pem'\]," /opt/fiware-pep-proxy/config.js
+
+WORKDIR /home/
+
+ADD flaskserver.py .
+
+EXPOSE 5004

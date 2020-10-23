@@ -5,17 +5,17 @@
 		"name": "Breast Histopathology Images",
 		"url" : "https://www.kaggle.com/paultimothymooney/breast-histopathology-images",
 		"version": "1.0",
-		"contact" : "rorduna@vicomtech.org",
+		"contact" : "",
 		"info": "public",
-		"description": "Invasive Ductal Carcinoma (IDC) is the most common subtype of all breast cancers. The original dataset consisted of 162 whole mount slide images of Breast Cancer (BCa) specimens scanned at 40x"
+		"description": ""
 		},
 		{
 		"name": "Dattackset",
-                "url" : "https://vicomtech.box.com/s/aoqd3uvswcqdhjthq6x3lvjba6c0wm3o",
+                "url" : "",
                 "version": "1.0",
-                "contact" : "jegaña@vicomtech.org",
+                "contact" : "",
                 "info": "private",
-		"description": "Dataset created in the VICOM's laboratory, it contains network traffic gathered from a smart factory testbed in which several attack are deployed"
+		"description": ""
 		}
 	]
 }

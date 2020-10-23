@@ -1,0 +1,27 @@
+{
+	"organization":"Vicomtech",
+	"updated_date":"01/07/2020",
+	"data":[{
+		"name": "Service number1",
+		"description": "description ...",
+		"hours": "10",
+		"level": "all",
+		"publicprivate": "Public",
+		"price":"Free",
+		"access" : "on-demand",
+		"version": "1.0",
+		"contact" : "rorduna@vicomtech.org"		
+		},
+{
+		"name": "Service number2",
+		"description": "description ...",
+		"hours": "10",
+		"level": "all",
+		"publicprivate": "Public",
+		"price":"Free",
+		"access" : "on-demand",
+		"version": "1.0",
+		"contact" : "rorduna@vicomtech.org"		
+		}
+	]
+}

@@ -1,16 +1,17 @@
-FROM python:3.7.9-alpine3.12
-
-RUN pip install flask flask_cors xmltodict json2xml
+# Use the official image as a parent image.
+FROM effezeta88/pep-proxy_rest-api
 
 WORKDIR /home/
 
-ADD flaskserver4.py .
-ADD cert.pem .
-ADD key.pem .
+ADD flaskserver.py .
 
-COPY data/ data/
-COPY wadl/ wadl/
+WORKDIR /opt/fiware-pep-proxy
 
-EXPOSE 5004
+# Run the command inside your image filesystem.
+RUN sed -i "s|cert/cert.crt|cert/cert.pem|g" /opt/fiware-pep-proxy/config.js
+RUN sed -i "s|cert/key.key|cert/privakey.pem|g" /opt/fiware-pep-proxy/config.js
+RUN sed -i -e "/privakey.pem/a\\  ca_cert: \['cert/chain.pem', 'cert/fullchain.pem'\]," /opt/fiware-pep-proxy/config.js
 
-CMD python3 flaskserver4.py
+ADD init_script.sh .
+RUN chmod +x init_script.sh
+ENTRYPOINT ["./init_script.sh"]

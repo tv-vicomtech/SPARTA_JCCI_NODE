@@ -3,7 +3,7 @@
 	"updated_date": "01/07/2020",
 	"data":[{
 		"name" : "Adversarial attack",
-		"url" : "https://gitlab.vicomtech.es/SPARTA_EU3270_2018/safair/tree/master/Adversarial_attack",
+		"url" : "",
 		"version": 1.0,
 		"contact": "xetxeberria@vicomtech.org",
 		"info": "code",
@@ -11,7 +11,7 @@
 		},
 		{
 		"name" : "Bio-Inspired models",
-		"url" : "https://gitlab.vicomtech.es/SPARTA_EU3270_2018/safair/tree/master/Bio-Inspired%20models",
+		"url" : "",
 		"version": 1.0,
 		"contact": "xetxeberria@vicomtech.org",
 		"info": "code",

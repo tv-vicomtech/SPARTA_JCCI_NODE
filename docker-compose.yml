@@ -1,0 +1,48 @@
+version: "3.5"
+services:
+
+  # PEP Proxy
+  pep-proxy:
+    build: . # Modified image of Keyrock to add certificates
+    container_name: sparta-proxy-restapi
+    hostname: sparta-proxy
+    # # dns: 
+    # #   - 172.18.2.3
+    # networks:
+    #   default:
+    #     ipv4_address: 172.18.2.8
+    # depends_on:
+    #   - keyrock
+    #   - authzforce
+    restart: on-failure
+    volumes:
+      - ./vicomlab-certs:/opt/fiware-pep-proxy/cert
+      - ./data:/home/data
+      - ./learning:/home/learning
+      - ./wadl:/home/wadl
+    ports:
+      - "${SPARTA_PROXY_PORT}:${SPARTA_PROXY_PORT}" 
+      - "${SPARTA_PROXY_HTTPS_PORT}:${SPARTA_PROXY_HTTPS_PORT}" 
+    #  - "${SPARTA_PORT}:${SPARTA_PORT}" 
+    expose:
+      - "${SPARTA_PROXY_PORT}"
+      - "${SPARTA_PROXY_HTTPS_PORT}"
+    environment:
+      - PEP_PROXY_APP_HOST=${SPARTA_HOST}
+      - PEP_PROXY_APP_PORT=${SPARTA_PORT}
+      - PEP_PROXY_PORT=${SPARTA_PROXY_PORT}
+      - PEP_PROXY_IDM_HOST=${KEYROCK_HOST}
+      - PEP_PROXY_HTTPS_ENABLED=${SPARTA_PROXY_HTTPS_ENABLED}
+      - PEP_PROXY_HTTPS_PORT=${SPARTA_PROXY_HTTPS_PORT}
+      - PEP_PROXY_IDM_SSL_ENABLED=${IDM_HTTPS_ENABLED}
+      - PEP_PROXY_IDM_PORT=${KEYROCK_HTTPS_PORT}
+      - PEP_PROXY_APP_ID=${PEP_PROXY_APP_ID}
+      - PEP_PROXY_USERNAME=${PEP_PROXY_USERNAME}
+      - PEP_PASSWORD=${PEP_PASSWORD}
+      - PEP_PROXY_PDP=${AUTHZFORCE_HOST}
+      - PEP_PROXY_AUTH_ENABLED=true
+      - PEP_PROXY_MAGIC_KEY=1234
+      - PEP_PROXY_AZF_PROTOCOL=https
+      - PEP_PROXY_AZF_HOST=${AUTHZFORCE_HOST}
+      - PEP_PROXY_AZF_PORT=${AUTHZFORCE_HTTPS_PORT}
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
