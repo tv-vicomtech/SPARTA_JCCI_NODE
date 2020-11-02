@@ -3,17 +3,9 @@ services:
 
   # PEP Proxy
   pep-proxy:
-    build: . # Modified image of Keyrock to add certificates
+    build: . 
     container_name: sparta-proxy-restapi
     hostname: sparta-proxy
-    # # dns: 
-    # #   - 172.18.2.3
-    # networks:
-    #   default:
-    #     ipv4_address: 172.18.2.8
-    # depends_on:
-    #   - keyrock
-    #   - authzforce
     restart: on-failure
     volumes:
       - ./vicomlab-certs:/opt/fiware-pep-proxy/cert
@@ -23,7 +15,6 @@ services:
     ports:
       - "${SPARTA_PROXY_PORT}:${SPARTA_PROXY_PORT}" 
       - "${SPARTA_PROXY_HTTPS_PORT}:${SPARTA_PROXY_HTTPS_PORT}" 
-    #  - "${SPARTA_PORT}:${SPARTA_PORT}" 
     expose:
       - "${SPARTA_PROXY_PORT}"
       - "${SPARTA_PROXY_HTTPS_PORT}"
