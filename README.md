@@ -24,7 +24,8 @@ All the partners information are stored in the folder 'data'.
 
 5) Go inside the folder data and update the files with your information
 
-```cd SPARTA_JCCI_NEXUS_REST_API/data```
+#### 5.1 Workbench
+```cd SPARTA_JCCI_NEXUS_REST_API/data``` # here there are all the information related with the Workbench section
 
 NB. There are five files to be modified, each one follow a json structure. If your company not provide a data/interacion/tool/service, please remove the default information from the appropiate file and keep an empty structure in there.
 
@@ -37,6 +38,19 @@ NB. There are five files to be modified, each one follow a json structure. If yo
 ```* services.jon = this file is a .json file that contains information about the available services created by the partner, how is possible access to them, their versions, the contact detail, and a little description.```
 
 ```* tools.jon = this file is a .json file that contains information about the available tools created by the partner, how is possible access to them, their versions, the contact detail, and a little description.```
+
+#### 5.1 Learning
+
+Then, for update the information regarding your learning section go to the folder
+
+```cd ../learning ```  or directly ```cd SPARTA_JCCI_NEXUS_REST_API/learning ``` 
+
+and please modify the 4 files with your information:
+
+```* learning_data.json```
+```* learning_interaction.json```
+```* learning_services.json```
+```* learning_tools.json```
 
 ## CONFIGURE PROXY
 
