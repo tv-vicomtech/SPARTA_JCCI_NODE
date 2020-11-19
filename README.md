@@ -10,7 +10,7 @@ All the partners information are stored in the folder 'data'.
 
 2) Download this repository
 
-```git clone https://github.com/tv-vicomtech/SPARTA_JCCI_NEXUS_REST_API.git```
+```git clone https://github.com/tv-vicomtech/SPARTA_JCCI_NODE.git```
 
 3) The web service must be deployed in a machine with access to the internet and that can also be accessed and reached through a URL (domain or fix IP address + port + route).
 
@@ -25,7 +25,7 @@ All the partners information are stored in the folder 'data'.
 5) Go inside the folder data and update the files with your information
 
 #### 5.1 Workbench
-```cd SPARTA_JCCI_NEXUS_REST_API/data``` # here there are all the information related with the Workbench section
+```cd SPARTA_JCCI_NODE/data``` # here there are all the information related with the Workbench section
 
 NB. There are five files to be modified, each one follow a json structure. If your company not provide a data/interacion/tool/service, please remove the default information from the appropiate file and keep an empty structure in there.
 
@@ -43,7 +43,7 @@ NB. There are five files to be modified, each one follow a json structure. If yo
 
 Then, for update the information regarding your learning section go to the folder
 
-```cd ../learning ```  or directly ```cd SPARTA_JCCI_NEXUS_REST_API/learning ``` 
+```cd ../learning ```  or directly ```cd SPARTA_JCCI_NODE/learning ``` 
 
 and please modify the 4 files with your information:
 
@@ -78,7 +78,7 @@ and please modify the 4 files with your information:
 - PEP_PASSWORD -- generated credentials by keyrock
 
 ## DEPLOY THE CONTAINER
-10) Go in the main folder (SPARTA_JCCI_NEXUS_REST_API) and build docker container
+10) Go in the main folder (SPARTA_JCCI_NODE) and build docker container
 
 ```cd ..```
 
