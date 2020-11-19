@@ -1,4 +1,4 @@
-## SPARTA JCCI REST API 
+## SPARTA JCCI NODE (or REST API )
 
 This rest API is used to dynamically update the information in the SPARTA JCCI webpage, i.e NEXUS. 
 Each partner should install this rest-API in order to manage their own information without problem, so for example they can change it without the permission of a central unit. The static content will remain in the main page, nevertheless, for the aim of the project it is strongly recommended to install this rest-API. The rest API is developed in a docker container in order to increase its usability and facilitate the deploy. 
