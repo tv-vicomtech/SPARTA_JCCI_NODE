@@ -60,7 +60,7 @@ and please modify the 4 files with your information:
 
 8) [FOR THE FOLLOWING STEPS PLEASE CONTACT THE KEYROCK IDENTITY MANAGER ADMINISTRATOR IN THIS EMAIL ADDRESS: lmerino@vicomtech.org, fzola@vicontech.org] Generate PEP Proxy credentials to connect to Keyrock:
 
-- Create Keyrock account in https://jcci.sparta.eu (if not enabled, ask for enabling to Keyrock administrator) and login.
+- Create Keyrock account in https://jcci.sparta.eu:4443 (if not enabled, ask for enabling to Keyrock administrator) and login.
 - Register an application: https://fiware-idm.readthedocs.io/en/latest/user_and_programmers_guide/application_guide/index.html#register-an-application
 - Register the proxy in the application just created: https://fiware-idm.readthedocs.io/en/latest/user_and_programmers_guide/application_guide/index.html#register-pep-proxy-and-iot-agents
 - Design and implement Access Policy (Keyrock administrator)
