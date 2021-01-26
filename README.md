@@ -52,6 +52,21 @@ and please modify the 4 files with your information:
 ```* learning_services.json```
 ```* learning_tools.json```
 
+#### 5.2 Configuration WADL
+
+Then, you should update one line in the WADL configuration file, so:
+
+```cd ../wadl/ ```  or directly ```cd SPARTA_JCCI_NODE/wadl ``` 
+
+and please modify the wadl_capabilities.xml file. In particular, the file define the path of the resource base (i.e. rest-api/node) so you have to update it according to your deployment as well as setting you PARTNER name.
+
+Example (default config.)
+```<resources base="10.200.5.38:5004/" name="VICOMTECH">```
+New configuration
+```<resources base="X.X.X.X:YYYY/" name="PARTNERNAME">```
+
+ where X.X.X.X:YYYY are the ip and port where the rest-api (node) is deployed (NOTE, the default port is 5004)
+
 ## CONFIGURE PROXY
 
 6) Update the HTTPS certificates directory in docker-compose.yml file --> certs
