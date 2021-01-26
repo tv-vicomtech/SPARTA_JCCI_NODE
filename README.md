@@ -100,11 +100,7 @@ New configuration
 
 ```cd ..```
 
-```docker build -t jcci_sparta_api .```
-
-11) Run the container
-
- ```docker run -d -p 5004:5004 --name jcci_sparta_api jcci_sparta_api ```
+```docker-compose up --build````
  
  ## ENABLE A PUBLIC ACCESS
 12) Please provide to the JCCI Nexus manager (or the Task Leader) the information about the public IP:PORT where the rest-API can be consumed.
