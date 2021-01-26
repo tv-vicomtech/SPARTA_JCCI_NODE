@@ -100,8 +100,8 @@ New configuration
 
 ```cd ..```
 
-```docker-compose up --build````
+```docker-compose up --build```
  
  ## ENABLE A PUBLIC ACCESS
-12) Please provide to the JCCI Nexus manager (or the Task Leader) the information about the public IP:PORT where the rest-API can be consumed.
+11) Please provide to the JCCI Nexus manager (or the Task Leader) the information about the public IP:PORT where the rest-API can be consumed.
  
