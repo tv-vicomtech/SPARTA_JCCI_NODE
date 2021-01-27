@@ -70,6 +70,18 @@ New configuration
 
  where X.X.X.X:YYYY are the ip and port where the rest-api (node) is deployed (NOTE, the default port is 5004)
 
+#### 5.3 Empty Learning or Workbench content
+
+Please, if you do not provide a specific learning content (data/services/tools/interaction) or a workbench content (data/services/tools/interaction) not remove its related file from the folder, just change its content with empty values, as shown in the example below:
+
+Ex. * learning_tools.json
+
+```{
+	"organization": "",
+	"updated_date": "",
+	"data":[	]
+}```
+
 ## CONFIGURE PROXY
 
 6) Update the HTTPS certificates directory in docker-compose.yml file --> certs
