@@ -76,11 +76,14 @@ Please, if you do not provide a specific learning content (data/services/tools/i
 
 Ex. * learning_tools.json
 
-```{
+```
+{
 	"organization": "",
 	"updated_date": "",
 	"data":[	]
-}```
+}
+```
+
 
 ## CONFIGURE PROXY
 
