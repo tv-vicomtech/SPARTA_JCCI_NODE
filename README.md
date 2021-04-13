@@ -96,7 +96,7 @@ Ex. * learning_tools.json
 - Create Keyrock account in https://jcci.sparta.eu:4443 (if not enabled, ask for enabling to Keyrock administrator) and login.
 - Register an application: https://fiware-idm.readthedocs.io/en/latest/user_and_programmers_guide/application_guide/index.html#register-an-application
 - Register the proxy in the application just created: https://fiware-idm.readthedocs.io/en/latest/user_and_programmers_guide/application_guide/index.html#register-pep-proxy-and-iot-agents
-- Design and implement Access Policy (Keyrock administrator)
+- Asking to Keyrock administrator to enable the account
 
 9) Update .env file:
 
