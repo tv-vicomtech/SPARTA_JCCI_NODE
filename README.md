@@ -91,7 +91,7 @@ Ex. * learning_tools.json
 
 7) Check that certificate filename are the same as the ones in the Dockerfile
 
-8) [FOR THE FOLLOWING STEPS PLEASE CONTACT THE KEYROCK IDENTITY MANAGER ADMINISTRATOR IN THIS EMAIL ADDRESS: lmerino@vicomtech.org, fzola@vicontech.org] Generate PEP Proxy credentials to connect to Keyrock:
+8) [FOR THE FOLLOWING STEPS PLEASE CONTACT THE KEYROCK IDENTITY MANAGER ADMINISTRATOR IN THIS EMAIL ADDRESS: jafernandez@vicomtech.org, fzola@vicomtech.org] Generate PEP Proxy credentials to connect to Keyrock:
 
 - Create Keyrock account in https://jcci.sparta.eu:4443 (if not enabled, ask for enabling to Keyrock administrator) and login.
 - Register an application: https://fiware-idm.readthedocs.io/en/latest/user_and_programmers_guide/application_guide/index.html#register-an-application
