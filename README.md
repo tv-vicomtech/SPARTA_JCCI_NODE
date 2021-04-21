@@ -39,7 +39,7 @@ NB. There are five files to be modified, each one follow a json structure. If yo
 
 ```* tools.jon = this file is a .json file that contains information about the available tools created by the partner, how is possible access to them, their versions, the contact detail, and a little description.```
 
-**NB. All date fields using this format: dd/mm/YYYY**
+**NB. All date fields should be indicated in dd/mm/YYYY**
 
 #### 5.2 Learning
 
@@ -54,7 +54,7 @@ and please modify the 4 files with your information:
 ```* learning_services.json```
 ```* learning_tools.json```
 
-**NB. All date fields using this format: dd/mm/YYYY**
+**NB. All date fields should be indicated in dd/mm/YYYY**
 
 #### 5.3 Configuration WADL
 
