@@ -39,7 +39,9 @@ NB. There are five files to be modified, each one follow a json structure. If yo
 
 ```* tools.jon = this file is a .json file that contains information about the available tools created by the partner, how is possible access to them, their versions, the contact detail, and a little description.```
 
-#### 5.1 Learning
+All date fields using this format: dd/mm/YYYY
+
+#### 5.2 Learning
 
 Then, for update the information regarding your learning section go to the folder
 
@@ -52,7 +54,9 @@ and please modify the 4 files with your information:
 ```* learning_services.json```
 ```* learning_tools.json```
 
-#### 5.2 Configuration WADL
+All date fields using this format: dd/mm/YYYY
+
+#### 5.3 Configuration WADL
 
 Then, you should update one line in the WADL configuration file, so:
 
@@ -70,7 +74,7 @@ New configuration
 
  where X.X.X.X:YYYY are the ip and port where the rest-api (node) is deployed (NOTE, the default port is 5004)
 
-#### 5.3 Empty Learning or Workbench content
+#### 5.4 Empty Learning or Workbench content
 
 Please, if you do not provide a specific learning content (data/services/tools/interaction) or a workbench content (data/services/tools/interaction) not remove its related file from the folder, just change its content with empty values, as shown in the example below:
 
