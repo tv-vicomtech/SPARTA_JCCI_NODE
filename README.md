@@ -20,6 +20,8 @@ All the partners information are stored in the folder 'data'.
 
 > For example, generate certificates with [Let's Encrypt](https://letsencrypt.org/). It is necessary to have ports 80 and 443 free so that the [certbot](https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71) of Let's Encrypt is able to carry out the handshake to assure domain is owned by the machine.
 
+### PS. rename your privkey.pem as privakey.pem (into vicomlab-certs folder)
+
 ## CHANGE DATA WITH YOUR INFORMATION
 
 5) Go inside the folder data and update the files with your information
