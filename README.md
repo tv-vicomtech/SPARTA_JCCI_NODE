@@ -127,6 +127,7 @@ Ex. * learning_tools.json
 11) Please provide to the JCCI Nexus manager (or the Task Leader) the information about the public IP:PORT where the rest-API can be consumed.
  
  
-Copyright (c) 2021 Digital Security Department at Vicomtech
+ 
 
+Copyright (c) 2021 Digital Security Department at Vicomtech
 Please read LICENSE file.
