@@ -129,6 +129,6 @@ Ex. * learning_tools.json
  
  
 
-### Copyright (c) 2021 Digital Security Department at Vicomtech
+<ins>Copyright (c) 2021 Digital Security Department at Vicomtech</ins>
 
-Please read LICENSE file.
+<ins>Please read LICENSE file.</ins>
